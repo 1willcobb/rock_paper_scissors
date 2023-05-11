@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 5rel;
+}
+
+.main_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+}
