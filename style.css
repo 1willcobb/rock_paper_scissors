@@ -6,6 +6,7 @@
 
 :root {
     --imgwidth: 200px;
+    --cardColor: rgba(104, 151, 131, 0.235);
 }
 
 h1 {
@@ -32,6 +33,7 @@ body {
     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
     100px 100px 80px rgba(0, 0, 0, 0.07);
+    background-color: var(--cardColor);
 }
 
 img {
@@ -42,20 +44,30 @@ img {
     padding: .2rem 1rem;
     border: 1px solid black;
     border-radius: 15px;
+    font-size: medium
 }
 
 .main_card button:hover {
     background-color: rgba(49, 133, 129, 0.192);
+    color: white;
 }
 
 textarea {
     resize: none;
     text-align: center;
     font-weight: bold;
+    border: none;
+    font-size: large;
+    color: rgb(120, 52, 52);
+    background-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
     img {
         width: 150px;
     }
+}
+
+.stats {
+    font-weight: bold;
 }
