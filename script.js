@@ -73,7 +73,7 @@ function evaluateWinner() {
     if (computerCheck === 1) {
         if (userCheck === 0) {
             losses ++;
-            output.value = "Try Loose!"
+            output.value = "You Loose!"
         } else if (userCheck === 1){
             ties ++;
             output.value = "Tie - Try Again"
@@ -88,7 +88,7 @@ function evaluateWinner() {
             output.value = "YOU WIN!"
         } else if (userCheck === 1){
             losses ++;
-            output.value = "you loose"
+            output.value = "You Loose"
         } else if (userCheck === 2){
             ties ++;
             output.value = "Tie - Try Again"
