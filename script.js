@@ -10,7 +10,7 @@ var computerCheck;
 var imageRight = document.getElementById("img_right");
 var goOnce = true;
 
-var randomImage = rightImages[Math.floor(Math.random() * rightImages.length)]
+
 
 
 var userChoiceIterator = 0;
@@ -35,6 +35,7 @@ function updateScores() {
 }
 
 function changeImageRight() {
+    var randomImage = rightImages[Math.floor(Math.random() * rightImages.length)]
     imageRight.src = "./Assets/" + randomImage
     computerCheck = rightImages.indexOf(randomImage)
     return randomImage;
@@ -54,6 +55,7 @@ function playAgain(){
 function checkGo(){
     if (goOnce) {
         goOnce = false;
+        changeImageRight();
         evaluateWinner()
     }
 }
@@ -100,7 +102,6 @@ var output = document.getElementById("output");
 var buttonClicked = document.getElementById("go");
 buttonClicked.addEventListener('click', function() {
     console.log("Go button clicked")
-    changeImageRight();
     checkGo();
     updateScores();
 });
