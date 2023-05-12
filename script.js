@@ -36,7 +36,7 @@ function updateScores() {
 
 function changeImageRight() {
     var randomImage = rightImages[Math.floor(Math.random() * rightImages.length)]
-    imageRight.src = "./Assets/" + randomImage
+    imageRight.innerHTML = '<img src="./Assets/' + randomImage + '" />';
     computerCheck = rightImages.indexOf(randomImage)
     return randomImage;
 }
@@ -48,7 +48,7 @@ function changeImageLeft() {
 
 
 function playAgain(){
-    imageRight.src = "";
+    imageRight.innerHTML = '';
     goOnce = true;
 }
 
