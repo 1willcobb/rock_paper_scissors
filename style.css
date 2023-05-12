@@ -12,3 +12,13 @@
 img {
     width: 200px;
 }
+
+.btn {
+    padding: .2rem 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.main_card button:hover {
+    background-color: rgba(49, 133, 129, 0.192);
+}
