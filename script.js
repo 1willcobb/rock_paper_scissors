@@ -53,12 +53,12 @@ function playAgain(){
 
 function checkGo(){
     if (goOnce) {
+        goOnce = false;
         evaluateWinner()
     }
 }
 
 function evaluateWinner() {
-    goOnce = false;
     if (computerCheck === 0) {
         if (userCheck === 0) {
             output.value = "Tie - Try Again!"
