@@ -38,6 +38,7 @@ body {
 
 img {
     width: var(--imgwidth);
+    border: none;
 }
 
 .btn {
@@ -94,6 +95,7 @@ textarea {
     body {
         margin-top: 50%;
         margin-bottom: 50%;
+
     }
 }
 
