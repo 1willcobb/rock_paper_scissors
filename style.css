@@ -62,12 +62,38 @@ textarea {
     background-color: transparent;
 }
 
+.stats {
+    font-weight: bold;
+}
+
+
 @media screen and (max-width: 768px) {
     img {
         width: 150px;
     }
 }
 
-.stats {
-    font-weight: bold;
+
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 80px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
 }
+
